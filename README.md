@@ -1,7 +1,7 @@
 <h1>Screenshot Components</h1>
 > Generate screenshot of react component automatically.
 
-![alt tag](http://c86i.imgup.net/ezgifcom-v7023.gif)
+![alt tag](https://s4.postimg.org/d9x9s3ist/ezgif_com_video_to_gif.gif)
 
 <h2>notice:</h2>
 this version still in beta, I wrote this tool base on the structure like this:

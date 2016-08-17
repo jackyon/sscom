@@ -47,7 +47,7 @@ if (options.needLogin) {
 let handlePage = (data, count) => {
     let elem = data[count],
         url = elem.url,
-        className = '.' + elem.className,
+        className = '.' + elem.className.split(' ')[0],
         componentPath = elem.componentPath,
         componentName = elem.componentName;
         

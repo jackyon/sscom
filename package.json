@@ -1,6 +1,6 @@
 {
   "name": "sscom",
-  "version": "0.0.6",
+  "version": "0.1.2",
   "main": "index.js",
   "scripts": {
     "cleanTemp": "rimraf /tmp/data.json",

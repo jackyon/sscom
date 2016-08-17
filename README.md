@@ -1,6 +1,8 @@
 <h1>Screenshot Components</h1>
 > Generate screenshot of react component automatically.
 
+![alt tag](http://c86i.imgup.net/ezgifcom-v7023.gif)
+
 <h2>notice:</h2>
 this version still in beta, I wrote this tool base on the structure like this:
 ```
@@ -24,5 +26,6 @@ $ npm install sscom
 ```
 Usage: sscom
   -h, --help      	  More usage and help infos
+  -v, --version       Version number
 ```
 

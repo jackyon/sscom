@@ -7,7 +7,7 @@ import createIfNotExist from 'create-if-not-exist';
 import shell from 'shelljs';
 jsonfile.spaces = 4;
 const exec = require('child_process').exec;
-
+let dataFile = '/tmp/data.json';
 let file = '/tmp/options.json';
 createIfNotExist(file, '[]');
 let config = jsonfile.readFileSync(file);
@@ -29,9 +29,10 @@ const tipReType = () => {
 
 	prompt.get(schema, (err, result) => {
 		let retype = result.retype;
+		clearJson();
 
 		if (!err && retype === 'Y' || retype === 'y') {
-			run();
+			promptGo();
 		}
 	});
 }
@@ -40,6 +41,7 @@ const tipReType = () => {
  * 输入提示
  */
 const promptGo = () => {
+
 	const validatorLogin = () => {
 		let needLoginVal = prompt.history('needLogin').value;
 
@@ -151,6 +153,15 @@ const promptGo = () => {
 		}
 	});
 }
+
+/**
+ * 当有options.json 有数据时先清除
+ */
+const clearJson = () => {
+	if (fs.existsSync(dataFile)) {
+		fs.unlinkSync(dataFile);
+	}
+};
 
 /**
  * 退出

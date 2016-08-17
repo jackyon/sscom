@@ -29,6 +29,6 @@ Promise.all([readComponentsDirs, readContainersDirs])
 
 
 process.on('exit', function () {
-	console.log('json 文件生成完毕!');
+	// console.log('json 文件生成完毕!');
 	shell.exec(`casperjs ${__dirname}/modules/Casperjs/index.js`);
 });

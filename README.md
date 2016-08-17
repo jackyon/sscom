@@ -29,3 +29,22 @@ Usage: sscom
   -v, --version       Version number
 ```
 
+<h2>Options</h2>
+```
+- 截图URL: 完整链接, 必填, 如 "http://192.168.1.230:8080/"
+- 项目路径: 完整路径, 选填, 默认为当前目录, 自定义目录需填写完整路径，如"/Users/jackyon/Desktop/react/"
+- 组件路径: 相对路径, 选填, 默认为 "app/components/"
+- 容器路径: 相对路径, 选填, 默认为 "app/containers/"
+- 路由路径: 相对路径, 选填, 默认为 "app/routes/"
+- 是否需要登录: 选填 Y/N, 默认为 N
+
+如果登录为是:
+- 登录页面Url: 必填
+- 账号: 必填
+- 密码: 必填
+- 账号Input的name值: 选填, 默认为 username
+- 密码Input的name值: 选填, 默认为password
+- 提交按钮 className 或 id: 必填, 如 ".submit_button"
+
+回车Enter键 或 "N"键 跳过选填项
+```
